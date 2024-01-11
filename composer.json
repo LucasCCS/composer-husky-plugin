@@ -1,5 +1,5 @@
 {
-  "name": "ccinn/composer-husky-plugin",
+  "name": "lucasccs/composer-husky-plugin",
   "type": "composer-plugin",
   "description": "Husky-php composer plugin",
   "keywords": [
