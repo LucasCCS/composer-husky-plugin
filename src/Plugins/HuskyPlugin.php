@@ -97,7 +97,10 @@ class HuskyPlugin implements PluginInterface, EventSubscriberInterface, Capable
             }
 
             $this->io->write(FlagPayload::COMMENT[0] . '---------- composer-husky-plugin -----------' . FlagPayload::COMMENT[1]);
-            $this->io->write($flags[0] . implode($output, PHP_EOL) . $flags[1]);
+            if (is_array($output)) {
+                            $this->io->write($flags[0] . implode($output, PHP_EOL) . $flags[1]);
+
+            }
         }
     }
 
